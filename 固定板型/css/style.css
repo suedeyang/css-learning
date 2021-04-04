@@ -1,0 +1,42 @@
+body{
+    background: #c2c2c2
+}
+
+.container{
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.site-header{
+    background-color: #30A9DE
+}
+
+.site-header-inner{
+    height: 100px;
+    background-color: #4AB8E8
+        
+
+}
+
+
+
+.site-main{
+    
+    background-color: #566270;
+}
+
+
+.site-main-inner{
+    height: 1000px;
+    background-color: #88A9B9;
+}
+
+
+.site-footer{
+    background-color: #00BCD4;
+}
+
+.site-footer-inner{
+    height: 100px;
+    background-color: #29CFE4;
+}
