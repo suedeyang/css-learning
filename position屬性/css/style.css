@@ -10,17 +10,25 @@
 
 
 .site-header{
-    background-color: #30A9DE
+    background-color: #30A9DE;
+    width: 100%;
+    top:0;
+    left:0;
+    position: fixed;
+    z-index: 99;
 }
 
 .site-header-inner{
-    height: 100px;
+    /*height: 200px;*/
     background-color: #4AB8E8
 }
 
 .site-logo{
     /*設定位置*/
-    position: absolute;
+    /*position: absolute;
+    這行被註解掉 position就變成stactic 
+    下面的top and left也跟著失效
+    */
     top: 10px;
     left:10px;
 
@@ -28,6 +36,17 @@
     color: #fff;
     text-transform: uppercase;
     font-weight: 800;
+}
+
+.site-footer{
+    background-color: #607d8b;
+    position: relative;
+    z-index: 1 ;
+}
+
+.site-main{
+    position:relative;
+    z-index: 1;
 }
 
 
