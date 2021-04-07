@@ -1,0 +1,7 @@
+.content:last-child{
+    width: 68%;
+}
+
+
+意味著當content是最後一個元素時，寬度就是68%
+注意!是"同層"的最後一個

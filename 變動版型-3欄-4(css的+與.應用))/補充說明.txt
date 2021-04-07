@@ -1,0 +1,12 @@
+# +的意思是下一個，下面這句的意思是sidebar的下一個content寬度是36%
+.sidebar + .content{
+    width:36%;
+}
+
+
+
+~符號代表是:尋找....之後的全部...同層元素 下方整句的意思是 尋找.sidebar之後的全部.sidebar同層元素
+
+.sidebar ~ .sidebar{
+    float: right;
+}

@@ -1,7 +1,6 @@
 body{
     background: #c2c2c2
 }
-
 .container{
     width: 80%;
     margin-left: auto;
@@ -11,33 +10,28 @@ body{
 .site-header{
     background-color: #30A9DE
 }
-
 .site-header-inner{
     height: 100px;
-    #background-color: #4AB8E8
-        
-
+    background-color: #4AB8E8
 }
-
-
 .site-main{
     background-color: #fff;
 }
-
-
-
 .site-main-inner::after {
     content:";
     display: block;
     clear:both;
 }
-
 .clearfix{
     clear:both;
 }
 
+
+
+
+
 .content{
-    width: 36%;
+    width: 68%;
     height: 1000px;
     background-color: #ddd;
     float: left;
@@ -47,17 +41,18 @@ body{
     width: 32%;
     height: 1000px;
     background-color: #f1f1f1;
-    float:right;
+    float:left;
     #margin-left:68%;
     #overflow:auto;
 }
 
-.sidebar-left{
-    float: left;
-    background-color: #ccc;
+.sidebar + .content{
+    width:36%;
 }
 
-
+.sidebar ~ .sidebar{
+    float: right;
+}
 
 .site-footer{
     background-color: #00BCD4;
