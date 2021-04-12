@@ -1,0 +1,21 @@
+<div class="dark">
+    <div class="blue">
+        <div class="green">
+            <div class="yellow"></div>
+            <div class="yellow"></div>
+            <div class="yellow"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+css選擇器執行的結果
+
+.dark div{} 全部dark的div子元素，包括blue，green，yellow
+.dark > div{} 全部dark的第一層div元素，也就是blue
+.yellow + .yellw 第二個yellow
+.yellow ~ .yellow  第二個之後全部的yellow
+
+
