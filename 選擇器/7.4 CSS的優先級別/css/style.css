@@ -1,0 +1,25 @@
+/*命名必須統一 但屬性要分離*/
+
+/*基本樣式*/
+.button{
+    color:blue;
+}
+
+
+/*綠色*/
+.button-green {
+    color: green;
+}
+
+
+
+/*大按鈕*/
+.button-big {
+    font-size: x-large;
+}
+
+/*小按鈕*/
+.button-small {
+    font-size: small;
+}
+

@@ -1,0 +1,11 @@
+
+li {
+    color:#000
+}
+
+.error-text {
+    color:red;
+}
+
+
+/*上述這種寫法有別於li.error僅限定於li系列中可以使用 可以直接用在HTML中 也可以用在別的元素上*/

@@ -9,13 +9,110 @@
 </div>
 
 
-
-
 css選擇器執行的結果
 
 .dark div{} 全部dark的div子元素，包括blue，green，yellow
 .dark > div{} 全部dark的第一層div元素，也就是blue
 .yellow + .yellw 第二個yellow
 .yellow ~ .yellow  第二個之後全部的yellow
+
+-------------------------------------------------------------------------
+
+*代表通用選擇器 表示網頁中的全部元素 
+*::after 指全部::after的 偽元素
+
+下方這句就是代表網頁中全部的元素和偽元素
+
+*,*::after,*::before {
+    box-sizing:inherit;
+    /* 全部採用繼承第一個出現的HTML元素 並包含所有的子元素 然後再html裡面訂定box-sizing的樣式*/
+}
+
+html{
+    box-sizing:boder-box;
+}
+
+---------------------------------------------------------------------------------
+
+CSS的優先級別 數字越大表示優先級別越高
+
+1 通用選擇器 *
+2 元素選擇器 li
+3 屬性選擇器(class) .list
+4 偽類選擇器 :first-child
+5 ID選擇器   #user-list
+
+若有多個選擇器 以優先級別加總來計算
+https://www.w3.org/TR/selectors-3/#specificity
+
+Examples:
+
+*               /* a=0 b=0 c=0 -> specificity =   0 */
+LI              /* a=0 b=0 c=1 -> specificity =   1 */
+UL LI           /* a=0 b=0 c=2 -> specificity =   2 */
+UL OL+LI        /* a=0 b=0 c=3 -> specificity =   3 */
+H1 + *[REL=up]  /* a=0 b=1 c=1 -> specificity =  11 */
+UL OL LI.red    /* a=0 b=1 c=3 -> specificity =  13 */
+LI.red.level    /* a=0 b=2 c=1 -> specificity =  21 */
+#x34y           /* a=1 b=0 c=0 -> specificity = 100 */
+#s12:not(FOO)   /* a=1 b=0 c=1 -> specificity = 101 */
+
+
+一個模組的樣式順序通常會如下所列 
+每一個選擇器本身只負責一個或少數的相關屬性
+這樣可以確保他們複寫彼此屬性的時候不會有衝突
+
+* {
+    color:black;
+}
+
+p {
+    color:red;
+}
+
+.content {
+    color:blue;
+}
+
+p:first-child{
+    color:yellow;
+}
+
+#content{
+    color:green;
+}
+
+
+基於優先級別，我們的輔助樣式都是 3 屬性選擇器(class) 但如果用在模組上，他就可以被忽略，如果我們想要跳過優先級別直接使用該屬性
+可以用important 只要加上它就會變成優先讀取
+Examples:
+
+CSS例:
+.error-text{
+    color:red !important;
+}
+
+
+
+<!--CSS樣式文件的優先級別 4內聯樣式>3內部樣式>2外部樣式>1 瀏覽器預設樣式-->
+
+<html>
+<head>
+    <!--2外部樣式-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    
+    <!--3內部樣式-->
+    <style>
+        h1 {color:red;}
+    </style>
+
+
+</head>
+
+<body>
+    <!--4 內聯樣式-->
+    <h1 style="color:black;">My First Headind</h1>
+</body>
+</html>
 
 
