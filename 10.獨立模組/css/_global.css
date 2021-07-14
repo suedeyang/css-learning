@@ -1,0 +1,11 @@
+/*自適應圖*/
+.img_fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*圓形圖*/
+.img-rounded{
+    border-radius: 50%;
+}

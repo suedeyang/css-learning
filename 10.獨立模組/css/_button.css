@@ -1,0 +1,58 @@
+.button{
+    background-color: #e2e2e2;
+    font-weight: 300;
+    color:#3e3e3e;
+    padding: 4px 10px;
+    display: inline-block; /*保持在同行*/
+    border: none;
+}
+
+.button:hover{
+    color:#3E3E3E;
+    background-color: #eee;
+    cursor: pointer; /*滑鼠變手指*/
+}
+
+.button-green{
+    background-color: #21ba45;
+    color:#fff;
+}
+
+.button-green:hover{
+    background-color: #16ab39;
+    color:#fff;
+}
+
+
+
+.button-blue{
+    background-color: #2196F3;
+    color:#fff;
+}
+
+.button-blue:hover{
+    background-color: #0C7Cd5;
+    color:#fff;
+}
+
+
+.button-red{
+    background-color: #db2828;
+    color:#fff;
+}
+
+.button-red:hover{
+    background-color: #d01919;
+    color:#fff;
+}
+
+
+.button-dark{
+    background-color: #010101;
+    color:#fff;
+}
+
+.button-dark:hover{
+    background-color: #3c3c3c;
+    color:#fff;
+}

@@ -1,0 +1,9 @@
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+}
+
+
+.title-sub{
+    font-size: 65%; /*盯上一層的文字大小的 65%*/
+    font-weight: 300;
+}

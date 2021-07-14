@@ -1,0 +1,69 @@
+@import url(_global.css);
+@import url(_layout.css);
+@import url(_nav.css);
+@import url(_helper.css);
+
+.site-header{
+    width:100%;
+    top:0;
+    left: 0;
+    background-color: khaki;
+    position:relative;
+    z-index: 99;
+   
+}
+
+.site-logo{
+    text-transform: uppercase;
+    font-weight: 800;
+    float: left;
+}
+
+
+@media (max-width:768){
+    .site-menu{
+        white-space: nowrap;
+        width: 100%;
+        overflow: auto;
+    }
+}
+
+
+.site-logo,
+.site-menu .nav-link{
+    padding: 20px 10px;
+}
+
+.dark-bg{
+    background-color: #000;
+    color:#fff;
+}
+
+.dark-bg a{   /*要不然選單中的超連結還是會去抓global中的a屬性黑色字*/
+    color: #fff;
+}
+
+.dark-bg a:hover{
+    color: rgba(255, 255, 255, .6);
+}
+
+
+.site-footer{
+    position:relative;
+    z-index=1;
+}
+
+.site-footer-inner{
+    height: 100px;
+}
+
+.site-main{
+    position:relative;
+    z-index:1;
+}
+
+.site-main-inner::after{
+    content:";
+    display:block;
+    clear:both;
+}

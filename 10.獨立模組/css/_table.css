@@ -1,0 +1,30 @@
+.table{
+    width: 100%;
+    border: 1px solid #DCDCDC;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.table thead{
+    font-weight: 500;
+}
+
+.table th,
+.table td{
+    padding:8px 10px;
+    border-bottom: 1px solid #dcdcdc;
+    text-align: left;
+}
+
+.table th{
+    border-bottom: 2px solid #dcdcdc;
+}
+
+/*:nth-child 是CSS3中新增的「偽類選取器（pseudo class selector）」，標準的語法是 :nth-child(n)，其中括弧內的「n」是最重要的關鍵字元了，「n」可以寫成是單數「odd」，或者是寫為偶數「even」*/
+.table tr:nth-child(even) td{
+    background-color: #f9fafb;
+}
+
+.table tr:last-child td{
+    border-bottom: none;
+}

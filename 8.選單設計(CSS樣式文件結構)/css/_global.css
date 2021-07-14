@@ -1,0 +1,15 @@
+Body{
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#4ea1d3;
+}
+

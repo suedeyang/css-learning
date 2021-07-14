@@ -1,0 +1,32 @@
+.media{
+    margin: 20px 0;
+}
+
+/* 圓形頭像的css控制改到_global.css裡
+.media-is img{
+    border-radius: 50%;
+}
+*/
+.media-is{
+    float:left;
+    margin-right: 10px;
+}
+
+.media-content{
+    overflow: hidden;
+}
+
+.media-title{
+    display: block;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 5px;    
+}
+
+/*after要兩個:: content保持空白*/
+.media::after{
+    content: "";
+    clear: both;
+    display: block;
+}
