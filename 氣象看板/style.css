@@ -20,7 +20,7 @@ body {
 
 @media(max-width:767px) {
     .container {
-        height: fit-content
+        height: fit-content;
     }
 }
 
@@ -41,7 +41,8 @@ body {
     background-color: rgba(238, 237, 237, 0.22);
     border-color: rgba(238, 237, 237, 0.22);
     box-shadow: 5px 6px 6px 2px #e9ecef;
-    text-align: center
+    text-align: center;
+    
 }
 
 @media(max-width:768px) {
@@ -55,20 +56,26 @@ body {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
+    transform: translateX(-50%);
 }
 
 .title p {
     margin-bottom: 0.2rem;
-    font-size: 2.2rem
+    font-size: 3rem;
+    border:0 solid;
+    border-bottom-width: .25rem;
+    border-bottom-color: #f0ad4e;
+
 }
 
 .temp {
-    font-size: 3.6rem;
-    margin-bottom: 1rem
+    font-size: 7rem;
+    margin-top: 6rem;
+    margin-bottom: 0.5rem
 }
 
 .header {
+    font-size: 2rem;
     color: #dddddd
 }
 

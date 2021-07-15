@@ -1,0 +1,53 @@
+
+.wrap {
+    display: grid;
+    grid-template-columns: 200px 50px auto 50px 200px;
+    grid-template-rows: 25% 100px auto;
+    /*空間不能分離且是唯一的，錯誤範例: "side main side"*/
+    grid-template-areas:
+      "header header header header header"
+      "side  main main main main"
+      "side footer footer footer footer";
+    height: 90vh;
+    width: 940px;
+    margin: 0 auto;
+  }
+  .item-a {
+    grid-area: header;
+    background-color: purple;
+  }
+  .item-b {
+    grid-area: main;
+    background-color: orange;
+  }
+  .item-c {
+    grid-area: side;
+    background-color: green;
+  }
+  .item-d {
+    grid-area: footer;
+    background-color: gray;
+  }
+
+/*簡單版的 Grid，如果版型較為簡單，可以直接使用 grid-auto-{ cols or rows}。如果是簡易的 960 12欄 grid 設定如下即可。*/
+  .row {
+    display: grid;
+    grid-auto-columns: 60px;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    width: 940px;
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+  .item {
+    grid-column-start: 2; /* 物件起始線 */
+    grid-column-end: span 4; /* 終點線 = 物件所佔的空間數 */
+    grid-row-start: 3; /* 物件起始線 */
+    grid-row-end: auto; /* 不設定終點線 */
+    background-color: red;
+    z-index: 999; /* 欄位重疊可用 z-index 設定前後順序 */
+  }
+
+  .item-a {
+    grid-area: 2 / 2 / 4/ 4;
+  }

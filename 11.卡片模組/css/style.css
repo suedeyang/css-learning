@@ -1,0 +1,39 @@
+@import url(_global.css);
+@import url(_layout.css);
+@import url(_nav.css);
+@import url(_helper.css);
+@import url(_typography.css);
+@import url(_button.css);
+@import url(_form.css);
+@import url(_table.css);
+@import url(_media.css);
+@import url(_card.css);
+
+.wrap {
+    display: grid;
+    grid-template-columns: 200px 50px auto 50px 200px;
+    grid-template-rows: 25% 100px auto;
+    grid-template-areas:
+      "header header header header header"
+      "side  main main main main"
+      "side footer footer footer footer";
+    height: 100vh;
+    width: 940px;
+    margin: 0 auto;
+  }
+  .item-a {
+    grid-area: header;
+    background-color: purple;
+  }
+  .item-b {
+    grid-area: main;
+    background-color: orange;
+  }
+  .item-c {
+    grid-area: side;
+    background-color: green;
+  }
+  .item-d {
+    grid-area: footer;
+    background-color: gray;
+  }

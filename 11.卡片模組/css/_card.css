@@ -1,0 +1,39 @@
+.card{
+    box-shadow: 0 0 2px rgba(0, 1, 2, .2);
+}
+
+.card-content{
+    padding: 15px;
+}
+
+.card .title{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.card .title + p{
+    margin-top: 0;
+}
+
+
+/*原本的寫法是 .card .table，card之下的table都會去除左右邊界
+  但如此的話，放在card-content中，左右邊界也會消除，
+  因此這裡用 > 符號，讓影響力限制在轄下第一層 也就是card直屬的table
+  不會影響到html中 card下方的card-content之下的table
+   */
+.card > .table{
+    border-left: 0;
+    border-right:0;
+}
+
+@media (min-width:998px){
+    .card-horizontal  .card-content{
+        background-color: :#fff;
+        position:absolute;
+        width:50%;
+        height:100%;
+        top: 0;
+        right: 0;
+        z-index:1;
+    }
+}
